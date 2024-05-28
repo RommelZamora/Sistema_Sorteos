@@ -8,7 +8,26 @@
 <body>
     <% if (user) { %>
         <h1>Bienvenido!</h1>
-        <p>ID de Usuario de Instagram: <%= user.id %></p>
+        <p>ID de Usuario: <%= user.id %></p>
+        <% if (user.photos && user.photos.data) { %>
+            <h2>Fotos:</h2>
+            <ul>
+                <% user.photos.data.forEach(photo => { %>
+                    <li>
+                        <p>Fecha de Creación: <%= photo.created_time %></p>
+                        <p>ID: <%= photo.id %></p>
+                        <p>Nombre: <%= photo.name || 'Sin nombre' %></p>
+                        <p>Enlace: <a href="<%= photo.link %>"><%= photo.link %></a></p>
+                        <% if (photo.images && photo.images.length > 0) { %>
+                            <p>Imagen:</p>
+                            <img src="<%= photo.images[0].source %>" alt="Foto de Facebook" style="max-width: 200px;">
+                        <% } %>
+                    </li>
+                <% }) %>
+            </ul>
+        <% } else { %>
+            <p>No se encontraron fotos.</p>
+        <% } %>
         <a href="/auth/logout">Cerrar Sesión</a>
     <% } else { %>
         <a href="/auth/instagram">Iniciar Sesión con Instagram</a>
