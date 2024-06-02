@@ -9,10 +9,10 @@
     <% if (user) { %>
         <h1>Bienvenido!</h1>
         <p>ID de Usuario: <%= user.id %></p>
-        <% if (user.photos && user.photos.data) { %>
+        <% if (photos && photos.length > 0) { %>
             <h2>Fotos:</h2>
             <ul>
-                <% user.photos.data.forEach(photo => { %>
+                <% photos.forEach(photo => { %>
                     <li>
                         <p>Fecha de Creación: <%= photo.created_time %></p>
                         <p>ID: <%= photo.id %></p>
@@ -25,6 +25,14 @@
                     </li>
                 <% }) %>
             </ul>
+            <div>
+                <% if (prevPage) { %>
+                    <a href="/paginate?before=<%= prevPage.split('before=')[1] %>">Anterior</a>
+                <% } %>
+                <% if (nextPage) { %>
+                    <a href="/paginate?after=<%= nextPage.split('after=')[1] %>">Siguiente</a>
+                <% } %>
+            </div>
         <% } else { %>
             <p>No se encontraron fotos.</p>
         <% } %>

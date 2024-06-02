@@ -25,6 +25,7 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+// Importar y usar las rutas de los controladores
 const mainRoutes = require('./controllers/mainController');
 const authRoutes = require('./controllers/authController');
 const privacyRoutes = require('./controllers/privacyController');
