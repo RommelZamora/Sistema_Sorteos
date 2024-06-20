@@ -33,7 +33,7 @@ const apiRoutes = require('./controllers/apiController');
 app.use('/auth', authRoutes);
 app.use('/api', apiRoutes);
 
-const PORT = 3200;
+const PORT = 8000;
 const httpsServer = https.createServer(credentials, app);
 
 httpsServer.listen(PORT, () => {
