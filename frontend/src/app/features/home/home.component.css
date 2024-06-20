@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  background: linear-gradient(to right, #f8e22f, #f9a230);
 }
 
 .content {
@@ -12,6 +13,7 @@
   max-width: 1200px;
   width: 100%;
   margin-bottom: 40px;
+  
 }
 
 .text-content {
@@ -53,15 +55,16 @@
 .footer {
   width: 110%;
   padding: 40px 20px;
-  background-color: white;
+  /*background-color: white;*/
   text-align: center;
 }
 
 .footer-brands {
-  background-color: #F3F3F3;
+  /*background-color: #F3F3F3;*/
   margin-bottom: 40px;
   width: 100%;
   padding: 60px;
+  background: linear-gradient(to right, #715c94, #2ba7dd);
 }
 
 .footer-brands p {
@@ -82,7 +85,11 @@
 }
 
 .footer-testimonials {
+  background: aliceblue;
   margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  padding: 60px;
 }
 
 .footer-testimonials h2 {
@@ -91,7 +98,7 @@
   margin-bottom: 20px;
 }
 
-.testimonial {
+.testimonial { 
   display: flex;
   flex-direction: column;
   align-items: center;

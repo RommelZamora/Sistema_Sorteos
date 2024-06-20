@@ -1,0 +1,36 @@
+<div class="planes-container">
+    <h2>¡Descubre los planes que tenemos para tí!</h2>
+    
+    <div class="planes">
+      <div class="plan" (mouseover)="expandPlan(plan1)">
+        <h3>Plan Básico</h3>
+        <div class="precio">$10</div>
+        <ul *ngIf="expandedPlan === 'plan1'">
+          <li>Acceso a sorteos solo de Instagram y Facebook</li>
+          <li>Ingreso de participantes ilimitado</li>
+        </ul>
+      </div>
+      
+      <div class="plan" (mouseover)="expandPlan(plan2)">
+        <h3>Plan Standard</h3>
+        <div class="precio">$20</div>
+        <ul *ngIf="expandedPlan === 'plan2'">
+          <li>Acceso a sorteos solo de Instagram y Facebook</li>
+          <li>Ingreso de participantes ilimitado</li>
+          <li>Función de exportación de datos</li>
+        </ul>
+      </div>
+      
+      <div class="plan" (mouseover)="expandPlan(plan3)">
+        <h3>Plan Premium</h3>
+        <div class="precio">$30</div>
+        <ul *ngIf="expandedPlan === 'plan3'">
+          <li>Acceso a sorteos solo de Instagram y Facebook</li>
+          <li>Ingreso de participantes ilimitado</li>
+          <li>Función de exportación de datos</li>
+          <li>Soporte prioritario</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,44 @@
+.planes-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .planes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .plan {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .plan:hover {
+    transform: scale(1.05);
+  }
+  
+  .precio {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    display: none;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+  ul.active {
+    display: block;
+  }
+  
