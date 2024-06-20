@@ -5,6 +5,9 @@ const passport = require('./passportConfig');
 const fs = require('fs');
 const https = require('https');
 const app = express();
+const cors = require('cors');
+
+app.use(cors()); // Permitir CORS para que el frontend pueda comunicarse con el backend
 
 // Leer los certificados SSL
 const privateKey = fs.readFileSync('ssl/key.pem', 'utf8');
@@ -13,8 +16,6 @@ const credentials = { key: privateKey, cert: certificate };
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.set('view engine', 'ejs');
-app.use(express.static('public'));
 
 app.use(session({
     secret: 'mysecretkey',
@@ -26,13 +27,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Importar y usar las rutas de los controladores
-const mainRoutes = require('./controllers/mainController');
 const authRoutes = require('./controllers/authController');
-const privacyRoutes = require('./controllers/privacyController');
+const apiRoutes = require('./controllers/apiController');
 
-app.use('/', mainRoutes);
 app.use('/auth', authRoutes);
-app.use('/privacy', privacyRoutes);
+app.use('/api', apiRoutes);
 
 const PORT = 3200;
 const httpsServer = https.createServer(credentials, app);
