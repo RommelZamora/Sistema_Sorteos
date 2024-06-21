@@ -1,0 +1,288 @@
+.planes-container {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 40px;
+}
+
+.planes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.plan {
+  background-color: #cecece;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.plan:hover {
+  transform: scale(1.05);
+  
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  display: none;
+}
+
+ul.active {
+  display: block;
+}
+
+.btn-plan {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #353535;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-plan:hover {
+  background-color: #0056b3;
+}
+
+
+.plan.expanded {
+  width: 300px; /* Ancho aumentado al expandirse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra al expandirse */
+  padding-bottom: 40px;
+}
+  
+.plan.expanded h3 {
+  color: #fff; /* Color de título al expandirse */
+}
+
+.plan.expanded ul {
+  display: block; /* Mostrar lista al expandirse */
+}
+
+.plan1-expanded {
+  background-color: #ffd903; /* Color de fondo para Plan Básico */
+  color: #ffffff; 
+}
+
+.plan2-expanded {
+  background-color: #87ceeb; /* Color de fondo para Plan Standard */
+  color: #ffffff; 
+}
+
+.plan3-expanded {
+  background-color: #90ee90; /* Color de fondo para Plan Premium */
+  color: #ffffff; 
+}
+
+.plan.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  z-index: 0;
+}
+
+.precio {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+  display: none;
+}
+
+ul.active {
+  display: block;
+}
+
+/* Estilos adicionales para la animación */
+@keyframes expandToCenter {
+  0% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1.2);
+      opacity: 0.7;
+  }
+}
+
+
+
+
+.top-section {
+  background: #87CEEB; /* Color de fondo base */
+  padding: 80px 0;
+  background-image: linear-gradient(to bottom, #87CEEB, #ffffff); /* Gradiente lineal de celeste a blanco */
+  background-size: cover; /* Ajuste de tamaño del fondo */
+  background-repeat: no-repeat; /* Evitar repetición del fondo */
+}
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.left-content {
+  flex: 1;
+  padding: 20px;
+  color: #333;
+}
+
+.left-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.left-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttons .btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons .btn-primary {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.buttons .btn-primary:hover {
+  background-color: #45a049;
+}
+
+.buttons .btn-scroll {
+  background-color: #007BFF;
+  color: white;
+}
+
+.buttons .btn-scroll:hover {
+  background-color: #0056b3;
+}
+
+.image-container {
+  flex: 1;
+  text-align: center;
+  
+}
+
+.social-icons {
+  position: absolute;
+  bottom: -50px; /* Posición inicial fuera del contenedor */
+  transition: bottom 1s ease;
+  width: 250px; /* Ancho reducido */
+  height: auto; /* Altura automática para mantener la proporción */
+  padding-right: 20px; /* Espaciado a la derecha para centrar más */
+}
+
+.top-section.fade-in {
+  opacity: 1;
+}
+
+
+.bottom-section {
+  background: #87CEEB; /* Color de fondo base */
+  padding: 100px 0;
+  background-image: linear-gradient(to bottom, #ffffff, #ffffef); /* Gradiente lineal de celeste a blanco */
+  background-size: cover; /* Ajuste de tamaño del fondo */
+  background-repeat: no-repeat; /* Evitar repetición del fondo */
+}
+
+.bottom-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  color: #333; /* Color de texto para el contenido */
+}
+
+
+
+.btn-scroll {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 10s ease;
+}
+
+.btn-scroll:hover {
+  background-color: #0056b3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.gif-icons {
+  position: absolute;
+  left: 500px; /* Ajusta la posición izquierda según tu diseño */
+  top: 50%; /* Ajusta la posición superior según tu diseño */
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.plan.expanded .gif-icons {
+  opacity: 1;
+}
+
+.gif-icons1 {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  width: 50vw;
+  height: 50vh;
+  z-index: 1000; /* Ajusta el índice z para que esté encima de otros elementos */
+  opacity: 0; 
+  pointer-events: none; /* Evita que el GIF interfiera con los eventos del mouse */
+  transition: opacity 0.3s ease;
+}
+
+.plan.expanded .gif-icons1 {
+  opacity: 1;
+}
+
+
+.gif-icons2 {
+  position: absolute;
+  left: -500px; /* Ajusta la posición izquierda según tu diseño */
+  top: 50%; /* Ajusta la posición superior según tu diseño */
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.plan.expanded .gif-icons2 {
+  opacity: 1;
+}
+
+

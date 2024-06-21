@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './features/auth/login/login.component';
 import { HomeComponent } from './features/home/home.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
-import { PlanesComponentComponent } from './planes-component/planes-component.component';
+import { PlanesComponent } from './features/planes/planes.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { PlanesComponentComponent } from './planes-component/planes-component.co
     LoginComponent,
     HomeComponent,
     NavbarComponent,
-    PlanesComponentComponent
+    PlanesComponent
   ],
   imports: [
     BrowserModule,
