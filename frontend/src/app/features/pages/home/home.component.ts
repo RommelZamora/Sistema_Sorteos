@@ -7,8 +7,4 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   mostrarNavbar: boolean = true;
-  createRaffle() {
-    console.log('Crear Sorteo button clicked!');
-    // Add navigation or other logic here
-  }
 }

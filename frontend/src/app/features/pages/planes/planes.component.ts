@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./planes.component.css']
 })
 export class PlanesComponent {
+
+
+
   constructor() { }
 
   ngOnInit(): void {

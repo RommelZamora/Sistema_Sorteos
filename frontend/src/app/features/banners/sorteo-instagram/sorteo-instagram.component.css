@@ -69,3 +69,8 @@
 .instagram-giveaway form p {
     font-size: 1em;
 }
+@media (max-width: 500px) {
+    .instagram-giveaway .input-group input {
+        background-image: none;
+    }
+}

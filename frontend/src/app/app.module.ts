@@ -18,6 +18,10 @@ import { SorteosComponent } from './features/banners/sorteos/sorteos.component';
 import { UsadasComponent } from './features/banners/usadas/usadas.component';
 import { MisSorteosComponent } from './features/banners/mis-sorteos/mis-sorteos.component';
 import { HistorialComponent } from './features/banners/historial/historial.component';
+import { SorteoPorListaComponent } from './features/banners/sorteo-por-lista/sorteo-por-lista.component';
+import { SorteoActualComponent } from './features/banners/sorteo-actual/sorteo-actual.component';
+import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
+import { OtherHomeComponent } from './features/pages/other-home/other-home.component';
 
 
 @NgModule({
@@ -36,7 +40,11 @@ import { HistorialComponent } from './features/banners/historial/historial.compo
     SorteosComponent,
     UsadasComponent,
     MisSorteosComponent,
-    HistorialComponent
+    HistorialComponent,
+    SorteoPorListaComponent,
+    SorteoActualComponent,
+    NavBarComponent,
+    OtherHomeComponent
   ],
   imports: [
     BrowserModule,

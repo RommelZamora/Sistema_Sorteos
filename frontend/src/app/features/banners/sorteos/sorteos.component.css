@@ -305,7 +305,6 @@ input:checked+.slider:before {
     width: 100%;
     min-height: 110px;
     max-height: 150px;
-    /* Ajusta este valor según sea necesario */
     border-radius: 25px;
     overflow-y: auto;
 }
@@ -617,13 +616,49 @@ input:checked+.slider:before {
     .setting-section:nth-child(3) {
         max-width: 90%;
     }
+    .header button {
+        margin-left: 0px;
+    }
+    .start-draw-button {
+        margin-left: 0px;
+    }
 }
 
 @media (max-width: 800px) {
+    .header {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
     .setting-section {
         max-width: 90%;
         min-width: 90%;
         margin: 20px 0;
+    }
+
+    .input-group {
+        display: flex;
+        align-items: center;
+        border: 2px solid #7d3c98;
+        background-color: white;
+        border-radius: 15px;
+        padding: 5px;
+        width: 350px;
+    }
+    
+    .input-group input {
+        background-position: 0px center;
+    }
+
+    .header button {
+        margin-left: 0px;
+    }
+    .start-draw-button {
+        margin-left: 0px;
     }
 }
 
