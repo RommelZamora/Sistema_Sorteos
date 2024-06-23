@@ -15,11 +15,4 @@ export class NavbarComponent {
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
   }
-  navigateToHome() {
-    this.router.navigate(['/home']);
-  }
-
-  navigateToLogin() {
-    this.router.navigate(['/login']);
-  }
 }

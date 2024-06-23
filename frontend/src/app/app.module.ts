@@ -1,12 +1,24 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AuthGuard } from './core/guards/auth.guard';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './features/auth/login/login.component';
-import { HomeComponent } from './features/home/home.component';
+import { HomeComponent } from './features/pages/home/home.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
-import { PlanesComponent } from './features/planes/planes.component';
+import { PlanesComponent } from './features/pages/planes/planes.component';
+import { PaginaAntiguaComponent } from './features/banners/pagina-antigua/pagina-antigua.component';
+import { FuncionamientoComponent } from './features/banners/funcionamiento/funcionamiento.component';
+import { SorteoInstagramComponent } from './features/banners/sorteo-instagram/sorteo-instagram.component';
+import { TestimoniosComponent } from './features/banners/testimonios/testimonios.component';
+import { NosotrosComponent } from './features/banners/nosotros/nosotros.component';
+import { ContactosComponent } from './features/banners/contactos/contactos.component';
+import { SorteosComponent } from './features/banners/sorteos/sorteos.component';
+import { UsadasComponent } from './features/banners/usadas/usadas.component';
+import { MisSorteosComponent } from './features/banners/mis-sorteos/mis-sorteos.component';
+import { HistorialComponent } from './features/banners/historial/historial.component';
+
 
 @NgModule({
   declarations: [
@@ -14,11 +26,22 @@ import { PlanesComponent } from './features/planes/planes.component';
     LoginComponent,
     HomeComponent,
     NavbarComponent,
-    PlanesComponent
+    PlanesComponent,
+    PaginaAntiguaComponent,
+    FuncionamientoComponent,
+    SorteoInstagramComponent,
+    TestimoniosComponent,
+    NosotrosComponent,
+    ContactosComponent,
+    SorteosComponent,
+    UsadasComponent,
+    MisSorteosComponent,
+    HistorialComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
