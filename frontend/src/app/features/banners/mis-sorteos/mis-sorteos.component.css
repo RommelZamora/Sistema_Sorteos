@@ -25,8 +25,14 @@ body {
   
 
 
+/* Estilo opcional para emojis */
+.activo {
+    color: green; /* Color de respaldo para emojis */
+}
 
-
+.inactivo {
+    color: red; /* Color de respaldo para emojis */
+}
 
 
 
@@ -39,7 +45,7 @@ body {
 
 .titulo {
     padding: 50px;
-    font-size: 24px;
+    font-size: 40px;
     font-weight: bold;
     color: #333;
 }

@@ -1,106 +1,96 @@
-.main-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    justify-content: space-between; /* Espacio entre contenido arriba y abajo */
-    align-items: center; /* Centra horizontalmente */
-    padding: 20px; /* Espacio de relleno ajustable según necesites */
-    box-sizing: border-box; /* Para incluir el padding en el tamaño total */
-    color: white;
-    background-color: black;
-  }
-
-  .title-up{
-    margin-top: 50px;
-  }
-
-
-/* Estilo para el texto superior */
-.texto-arriba {
-    text-align: center; /* Centra el texto horizontalmente */
-    margin-top: 20px; /* Espacio superior */
-  }
-  
-  /* Estilo para la zona de redes sociales (contenido-redes) */
-  .contenido-redes {
-    margin-bottom: 400px; /* Espacio inferior */
-
-  }
-
-  
-body, h1, h2, h5, p, div {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-size: large;
-  }
-
-.title-up{
-    padding-bottom: 50px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
-    color: #ffffff;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-
-.social-icon {
-    width: 19px; /* Ajusta el ancho  */
-    height: auto; /* Altura automática para mantener la proporción */
+.container {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+  
 }
 
-.contenido-redes{
-    padding-top: 80px;
+h1 {
+  color: #333;
+  margin-bottom: 20px;
 }
 
-.cards {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
+h1 .highlight {
+  color: #007BFF; 
+}
+
+p {
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.sorteos {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  padding: 100px;
+}
+
+.sorteo {
+  position: relative; /* Añadir posición relativa al contenedor */
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  border: 5px solid #6cb3ff;
+  width: 25%;
+  box-sizing: border-box;
   
-  .cards .red {
-    background-color: #f43f5e;
-  }
-  
-  .cards .blue {
-    background-color: #3b82f6;
-  }
-  
-  .cards .green {
-    background-color: #22c55e;
-  }
-  
-  .cards .card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    height: 100px;
-    width: 250px;
-    border-radius: 10px;
-    color: white;
-    cursor: pointer;
-    transition: 400ms;
-  }
-  
-  .cards .card p.tip {
-    font-size: 1em;
-    font-weight: 700;
-  }
-  
-  .cards .card p.second-text {
-    font-size: .7em;
-  }
-  
-  .cards .card:hover {
-    transform: scale(1.1, 1.1);
-  }
-  
-  .cards:hover > .card:not(:hover) {
-    filter: blur(10px);
-    transform: scale(0.9, 0.9);
-  }
-  
+}
+
+.sorteo h2 {
+  color: #007BFF;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.sorteo p {
+  color: #666;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.select-button {
+  position: absolute; /* Posición absoluta para los botones */
+  bottom: -60px; /* Ajusta según sea necesario */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.small-logo {
+  width: 50px; /* Ajusta el ancho según tus necesidades */
+  height: auto; /* Mantiene la proporción de la imagen */
+}

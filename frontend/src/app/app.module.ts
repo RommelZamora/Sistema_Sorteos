@@ -23,7 +23,6 @@ import { SorteoActualComponent } from './features/banners/sorteo-actual/sorteo-a
 import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
 import { OtherHomeComponent } from './features/pages/other-home/other-home.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

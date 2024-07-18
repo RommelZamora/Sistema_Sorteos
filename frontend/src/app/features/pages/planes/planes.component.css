@@ -133,7 +133,8 @@ ul.active {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: 100px;
+ 
   position: relative;
 }
 
@@ -188,7 +189,8 @@ ul.active {
 
 .image-container {
   flex: 1;
-  text-align: center;
+  text-align: right ;
+  padding-right: 220px;
   
 }
 
@@ -289,8 +291,9 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 200px;
+  padding-inline: 280px;
   padding-top: 50px;
+  
 }
 .card {
   height: 400px;

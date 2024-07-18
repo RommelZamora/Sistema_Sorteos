@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
+import os
 
 from pathlib import Path
 
@@ -37,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
+    #'rest_framework',
     'sorteo',
 ]
 
@@ -75,24 +76,24 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-
-        'ENGINE': 'django.db.backends.postgresql',
-
-
-        'NAME': 'sorteo',
-
-        'USER': 'sorteo_develop',
-
-        'PASSWORD': '31NYBUq0Y4xh9Lf8AVSAkCWy3wp55nO9',
-
-        'HOST': 'dpg-cpl5hved3nmc73cqhprg-a.ohio-postgres.render.com',
-
-        'PORT': '5432',
-
-    }
-}
+#DATABASES = {
+#    'default': {
+#
+#        'ENGINE': 'django.db.backends.postgresql',
+#
+#
+#       'NAME': 'sorteo',
+#
+#       'USER': 'sorteo_develop',
+#
+#        'PASSWORD': '31NYBUq0Y4xh9Lf8AVSAkCWy3wp55nO9',
+#
+#        'HOST': 'dpg-cpl5hved3nmc73cqhprg-a.ohio-postgres.render.com',
+#
+#        'PORT': '5432',
+#
+#    }
+#}
 
 
 # Password validation
@@ -129,9 +130,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),  # Esta es la ruta por defecto, puedes mantenerla si lo deseas
+    os.path.join(BASE_DIR, 'static', 'dist', 'giveaway'),  # Asegúrate de agregar la ruta correcta aquí
+
+]

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #38ace4;
+    background-color: #e1e3e4;
     padding: 20px;
 }
 
@@ -55,9 +55,9 @@
     font-size: 16px;
     margin-left: 30px;
     padding: 8px 18px;
-    border: 2px solid white;
+    border: 2px solid #78548c;
     background-color: transparent;
-    color: white;
+    color: #78548c;
     border-radius: 13px;
     cursor: pointer;
 }
@@ -70,7 +70,7 @@
 
 .header span {
     margin-left: 5px;
-    color: white;
+    color: #78548c;
 }
 
 .settings {
@@ -100,7 +100,7 @@
 }
 
 .section-body {
-    background-color: #aceaf4;
+    background-color: #000000;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding: 20px;
@@ -126,7 +126,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #34ace4;
+    background-color: #78548c;
     color: #fff;
     padding: 10px;
     border-radius: 25px;
@@ -180,7 +180,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: #34ace4;
+    background-color: #78548c;
     padding: 10px;
     border-radius: 25px;
     position: absolute;
@@ -190,7 +190,7 @@
 }
 
 .bold-colored-text {
-    color: #34ace4;
+    color: #78548c;
     font-weight: bold;
 }
 
@@ -203,7 +203,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #e4f4fc;
+    background-color: #ffffff;
     padding: 50px 10px 10px;
     width: 100%;
     height: 100%;
@@ -218,7 +218,7 @@
 }
 
 .setting-raffle .bottom-part .raffle-count-input {
-    background-color: #34ace4;
+    background-color: #78548c;
     color: white;
     border-radius: 40%;
     width: 50px;
@@ -240,7 +240,7 @@
 } */
 
 .setting-raffle .bottom-part .raffle-count {
-    background-color: #007bff;
+    background-color: #78548c;
     color: white;
     border-radius: 30%;
     width: 30px;
@@ -289,7 +289,7 @@
 }
 
 input:checked+.slider {
-    background-color: #e4f4fc;
+    background-color: #ffffff;
 }
 
 input:checked+.slider:before {
@@ -314,7 +314,7 @@ input:checked+.slider:before {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: #34ace4;
+    background-color: #78548c;
     padding: 10px;
     border-radius: 5px 5px 0 0;
     position: sticky;
@@ -327,7 +327,7 @@ input:checked+.slider:before {
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    background-color: #e4f4fc;
+    background-color: #ffffff;
     padding: 10px;
     width: 100%;
     border-radius: 0 0 25px 25px;
@@ -340,19 +340,19 @@ input:checked+.slider:before {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    border-bottom: 1px solid #34ace4;
+    border-bottom: 1px solid #78548c;
     margin-bottom: 5px;
     cursor: pointer;
 }
 
 .setting-participants .bottom-part p {
     margin: 0;
-    color: #34ace4;
+    color: #78548c;
     flex: 1;
 }
 
 .participant-icon {
-    color: #34ace4;
+    color: #78548c;
     transition: color 0.3s;
     margin-right: 10px;
 }
@@ -376,14 +376,14 @@ input:checked+.slider:before {
 }
 
 .add-icon {
-    color: #34ace4;
+    color: #78548c;
     cursor: pointer;
     margin-left: 10px;
     transition: color 0.3s;
 }
 
 .add-icon:hover {
-    color: #007bff;
+    color: #78548c;
 }
 
 .name-mail {
@@ -393,17 +393,17 @@ input:checked+.slider:before {
     flex: 1;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
-    background-color: #e4f4fc;
-    color: #34ace4;
+    background-color: #ffffff;
+    color: #78548c;
 }
 
 .name-mail::placeholder {
-    color: #34ace4;
+    color: #78548c;
     opacity: 1;
 }
 
 .name-mail:focus {
-    border-bottom-color: #007bff;
+    border-bottom-color: #78548c;
     transition: border-bottom-color 0.3s;
 }
 
@@ -414,7 +414,7 @@ input:checked+.slider:before {
 .setting-section button {
     padding: 5px 10px;
     border: none;
-    background-color: #007bff;
+    background-color: #78548c;
     color: white;
     border-radius: 5px;
     cursor: pointer;
@@ -430,7 +430,7 @@ input:checked+.slider:before {
     outline: none;
     border: none;
     font-size: 14px;
-    background-color: #aceaf4;
+    background-color: #ffffff;
 }
 
 .setting-section input[type="number"]::-webkit-inner-spin-button,
@@ -449,7 +449,7 @@ input:checked+.slider:before {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: #34ace4;
+    background-color: #78548c;
     color: white;
     padding: 10px;
     border-radius: 25px;
@@ -464,11 +464,11 @@ input:checked+.slider:before {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #e4f4fc;
+    background-color: #ffffff;
     padding: 10px;
     border-radius: 25px;
     margin-bottom: 5px;
-    color: #34ace4;
+    color: #78548c;
 }
 
 .publication ul li i {
@@ -477,7 +477,7 @@ input:checked+.slider:before {
 }
 
 .publication ul li i:hover {
-    color: #007bff;
+    color: #78548c;
 }
 
 .logo .add-icon {
@@ -520,7 +520,7 @@ input:checked+.slider:before {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: #34ace4;
+    background-color: #78548c;
     padding: 10px;
     border-radius: 5px 5px 0 0;
     position: sticky;
@@ -533,7 +533,7 @@ input:checked+.slider:before {
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    background-color: #e4f4fc;
+    background-color: #ffffff;
     padding: 10px;
     width: 100%;
     border-radius: 0 0 25px 25px;
@@ -546,14 +546,14 @@ input:checked+.slider:before {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    border-bottom: 1px solid #34ace4;
+    border-bottom: 1px solid #78548c;
     margin-bottom: 5px;
     cursor: pointer;
 }
 
 .setting-publication .bottom-part p {
     margin: 0;
-    color: #34ace4;
+    color: #78548c;
     flex: 1;
 }
 
@@ -564,7 +564,7 @@ input:checked+.slider:before {
 }
 
 .publication-icon {
-    color: #34ace4;
+    color: #78548c;
     transition: color 0.3s;
     margin-right: 10px;
 }
@@ -586,7 +586,7 @@ input:checked+.slider:before {
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
-    color: #34ace4;
+    color: #78548c;
     margin-top: 20px;
     margin-left: 30px;
     padding: 8px 18px;

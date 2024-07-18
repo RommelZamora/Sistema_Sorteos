@@ -1,6 +1,10 @@
 from django.urls import path
+from django.urls import path, include
 from .views import *
-
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.contrib import admin
+from django.urls import re_path
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path('roles/', RolesListCreate.as_view(), name='roles-list-create'),
@@ -25,4 +29,13 @@ urlpatterns = [
     path('ganadores/<int:pk>/', GanadoresRetrieveUpdateDestroy.as_view(), name='ganadores-retrieve-update-destroy'),
     path('publicaciones/', PublicacionListCreate.as_view(), name='publicaciones-list-create'),
     path('publicaciones/<int:pk>/', PublicacionRetrieveUpdateDestroy.as_view(), name='publicaciones-retrieve-update-destroy'),
+    path('admin/', admin.site.urls),
 ]
+
+
+urlpatterns = [
+    # Otras rutas definidas aquí
+     re_path(r'^.*$', TemplateView.as_view(template_name='dist/giveaway/index.html')),
+
+]
+urlpatterns += staticfiles_urlpatterns()

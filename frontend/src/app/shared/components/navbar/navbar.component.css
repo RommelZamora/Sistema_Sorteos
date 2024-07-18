@@ -132,6 +132,7 @@ a {
 .navbar-logo img {
   margin-top: 10px;
   height: 30px;
+  margin-left: 50px;
 }
 
 a {
@@ -165,6 +166,7 @@ a {
 .navbar-menu {
   display: flex;
   align-items: center;
+  margin-right: 50px;
 }
 
 .navbar-link {
