@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './features/auth/login/login.component';
 import { HomeComponent } from './features/pages/home/home.component';
+import { PostsComponent } from './features/pages/posts/posts.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { PlanesComponent } from './features/pages/planes/planes.component';
 import { PaginaAntiguaComponent } from './features/banners/pagina-antigua/pagina-antigua.component';
@@ -28,6 +29,7 @@ import { OtherHomeComponent } from './features/pages/other-home/other-home.compo
     AppComponent,
     LoginComponent,
     HomeComponent,
+    PostsComponent,
     NavbarComponent,
     PlanesComponent,
     PaginaAntiguaComponent,

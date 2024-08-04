@@ -1,0 +1,29 @@
+<app-nav-bar></app-nav-bar>
+<div class="post-viewer">
+    <div class="container">
+        <div class="navbar-profile2">
+            <img src="assets/images/navbar/profile-icon.png" alt="Profile Icon">
+        </div>
+    </div>
+    <h2>Hola, Usuario</h2>
+    <p>Por favor, selecciona un post</p>
+    <div>
+      <select class="filter-images" (change)="filterImages($event)">
+        <option value="todos">Todos los posts</option>
+      </select>
+
+        <select class="filter-select" (change)="sortImages($event)" >
+            <option value="recent">Más recientes</option>
+            <option value="oldest">Más antiguos</option>
+            <option value="nameAsc">Nombre ascendente</option>
+            <option value="nameDesc">Nombre descendente</option>
+          </select>
+    </div>
+
+    <div class="images">
+      <div class="image" *ngFor="let image of filteredImages">
+        <img [src]="image.src" [alt]="image.name">
+        <p class="image-name">{{image.name}}</p>
+      </div>
+    </div>
+</div>
